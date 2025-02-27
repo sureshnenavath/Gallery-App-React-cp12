@@ -8,12 +8,13 @@ const ThumbnailItemComponent = props => {
   const getOpacityStyle = isActive ? '' : 'image-style'
   return (
     <li>
-      <img
-        src={eachItem.thumbnailUrl}
-        alt={eachItem.thumbnailAltText}
-        onClick={sendItemId}
-        className={getOpacityStyle}
-      />
+      <button onClick={sendItemId}>
+        <img
+          src={eachItem.thumbnailUrl}
+          alt={eachItem.thumbnailAltText}
+          className={getOpacityStyle}
+        />
+      </button>
     </li>
   )
 }

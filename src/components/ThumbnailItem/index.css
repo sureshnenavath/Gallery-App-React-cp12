@@ -6,3 +6,7 @@ li {
   list-style: none;
   margin-right: 10px;
 }
+button{
+  border: 0px;
+  background-color: transparent;
+}

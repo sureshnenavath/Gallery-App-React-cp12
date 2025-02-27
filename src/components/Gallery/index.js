@@ -91,11 +91,12 @@ class Gallery extends Component {
             alt={imagesList[imageItemId].imageAltText}
           />
           <h1 className="margin-left">Nature Photography</h1>
-          <p className="margin-left">Nature Photography by Suresh</p>
+          <p className="margin-left">Nature Photography by Rahul</p>
 
           <ul className="ul-container">
             {imagesList.map(eachItem => (
               <ThumbnailItemComponent
+                key={eachItem.id}
                 eachItem={eachItem}
                 getImageItemId={this.getImageItemId}
                 isActive={eachItem.id === imageItemId}
